@@ -2,11 +2,11 @@
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
-    const targetId = link.getAttribute('href').substring(1); // substring é equivalente ao slice aqui
+    const targetId = link.getAttribute('href').substring(1); 
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
       window.scrollTo({
-        top: targetSection.offsetTop - 60, // ajuste para o header fixo
+        top: targetSection.offsetTop - 60, 
         behavior: 'smooth'
       });
     }
@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", function () {
     if (index < texto.length) {
       typingElement.innerHTML += texto.charAt(index);
       index++;
-      setTimeout(type, 100); // velocidade da digitação
+      setTimeout(type, 100);
     }
   }
 

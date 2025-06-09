@@ -134,7 +134,7 @@ section h2 {
 
 #experiencia {
   margin: 40px auto;
-  max-width: 1000px; /* igual ao section para melhor responsividade */
+  max-width: 1000px;
   padding: 0 10px;
   display: flex;
   flex-wrap: wrap;
@@ -159,7 +159,6 @@ section h2 {
   box-shadow: 0 10px 25px rgba(255, 204, 0, 0.6);
 }
 
-/* Contato: links com ícones */
 #contato a > i.fab.fa-whatsapp {
   color: #25D366;
 }
@@ -167,7 +166,7 @@ section h2 {
   color: #0A66C2;
 }
 #contato a > i.fab.fa-github {
-  color: #f5f5f5; /* branco ou bem claro */
+  color: #f5f5f5;
 }
 
 /* Animações */
@@ -207,24 +206,23 @@ section h2 {
   font-weight: bold;
   color: rgb(255, 196, 0);
   margin-top: 10px;
-  height: auto;              /* Permite altura variável conforme o texto */
-  white-space: normal;       /* Permite quebra de linha automática */
-  overflow: visible;         /* Mostra todo o conteúdo */
+  height: auto;            
+  white-space: normal;       
+  overflow: visible;         
   border-right: 2px solid rgb(255, 166, 0);
-  padding-right: 5px;        /* Espaço para o cursor */
-  max-width: 600px;          /* Limita a largura para não esticar demais */
-  line-height: 1.4;          /* Melhora espaçamento entre linhas */
+  padding-right: 5px;       
+  max-width: 600px;         
+  line-height: 1.4;         
   animation: blink 0.7s steps(1) infinite;
 }
 
-/* Animação para o cursor piscando */
 @keyframes blink {
   0%, 100% { border-color: rgb(255, 166, 0); }
   50% { border-color: transparent; }
 }
 
 #contato a[href^="mailto:"] {
-  color: #ffcc00; /* Ou a cor que você preferir */
+  color: #ffcc00;
   text-decoration: none;
   font-weight: 600;
 }
